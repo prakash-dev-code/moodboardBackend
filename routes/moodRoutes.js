@@ -9,9 +9,7 @@ const {
   deleteMood,
 } = require("../controllers/moodController");
 
-
 const { authenticateToken } = require("../middleware/authMiddleware");
-console.log("authenticateToken is", authenticateToken);
 
 // Protect all routes
 router.use(authenticateToken);
